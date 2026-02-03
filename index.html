@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Buổi 2 – Product Dashboard</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Segoe UI, Arial;
+  background:#f3f4f6;
+}
+
+header{
+  background:linear-gradient(135deg,#6366f1,#4f46e5);
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:25px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+button{
+  padding:10px 16px;
+  border:none;
+  border-radius:8px;
+  background:#4f46e5;
+  color:white;
+  cursor:pointer;
+  margin:5px;
+}
+
+button:hover{
+  opacity:.85;
+}
+
+pre{
+  background:#f3f4f6;
+  padding:15px;
+  border-radius:8px;
+  min-height:150px;
+  overflow:auto;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th,td{
+  padding:10px;
+  border-bottom:1px solid #e5e7eb;
+  text-align:center;
+}
+
+th{background:#eef2ff}
+
+.badge{
+  padding:4px 10px;
+  border-radius:20px;
+  color:white;
+  font-size:13px;
+}
+
+.green{background:#22c55e}
+.red{background:#ef4444}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>📦 Product Manager – Buổi 2</h1>
+<p>Nhấn từng nút để xem kết quả</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Danh sách sản phẩm</h2>
+<table id="productTable"></table>
+</div>
+
+<div class="card">
+<h2>Thực thi từng câu</h2>
+
+<div>
+<button onclick="runCau3()">Câu 3</button>
+<button onclick="runCau4()">Câu 4</button>
+<button onclick="runCau5()">Câu 5</button>
+<button onclick="runCau6()">Câu 6</button>
+<button onclick="runCau7()">Câu 7</button>
+<button onclick="runCau8()">Câu 8</button>
+<button onclick="runCau9()">Câu 9</button>
+<button onclick="runCau10()">Câu 10</button>
+</div>
+
+<h3>Kết quả thực thi</h3>
+<pre id="result">Nhấn nút câu bất kỳ để xem kết quả...</pre>
+
+</div>
+
+</div>
+
+<script src="Buoi2.js"></script>
+</body>
+</html>
